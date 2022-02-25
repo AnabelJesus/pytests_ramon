@@ -13,3 +13,21 @@ class ClassFibonacciShould(unittest.TestCase):
         # Assert
         expected = 0
         self.assertEqual(expected,output)
+
+    def test_return_1_when_position_is_1(self):
+        # Arrange
+        input = 1
+        # Act
+        output = ClassFibonacci(input=input).transform()
+        # Assert
+        expected = 1
+        self.assertEqual(expected,output)
+
+    # def test_return_1_when_position_is_2(self):
+    #     # Arrange
+    #     input = 2
+    #     # Act
+    #     output = ClassFibonacci(input=input).transform()
+    #     # Assert
+    #     expected = 1
+    #     self.assertEqual(expected,output)
