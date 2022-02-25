@@ -5,7 +5,7 @@ from Fibonacci.class_fibonacci import ClassFibonacci
 
 
 class ClassFibonacciShould(unittest.TestCase):
-    def test_returns_0_when_position_is_0(self):
+    def test_return_0_when_position_is_0(self):
         # Arrange
         input = 0
         # Act

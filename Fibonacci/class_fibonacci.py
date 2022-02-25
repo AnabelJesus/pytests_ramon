@@ -4,7 +4,7 @@ class ClassFibonacci():
         self.input = input
 
     def _fibonacci(self):
-        pass
+        return 0
 
     def transform(self):
         return self._fibonacci()
