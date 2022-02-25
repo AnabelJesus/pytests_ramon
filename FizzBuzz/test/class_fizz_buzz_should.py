@@ -1,26 +1,26 @@
 import unittest
 
-from class_fizz_buzz import ClassFizzBuzz
+from FizzBuzz.class_fizz_buzz import ClassFizzBuzz
 
 
 class ClassFizzBuzzShould(unittest.TestCase):
     def test_returns_1_as_string_when_not_multiple(self):
-        #Arrange
+        # Arrange
         input = 1
-        #Act
+        # Act
         output = ClassFizzBuzz(input=input).transform()
-        #Assert
+        # Assert
         expected = '1'
-        self.assertEqual(output,expected)
+        self.assertEqual(expected, output)
 
     def test_returns_2_as_string_when_not_multiple(self):
-        #Arrange
+        # Arrange
         input = 2
-        #Act
+        # Act
         output = ClassFizzBuzz(input=input).transform()
-        #Assert
+        # Assert
         expected = '2'
-        self.assertEqual(output,expected)
+        self.assertEqual(expected, output)
 
     def test_returns_4_as_string_when_not_multiple(self):
         # Arrange
@@ -29,7 +29,7 @@ class ClassFizzBuzzShould(unittest.TestCase):
         output = ClassFizzBuzz(input=input).transform()
         # Assert
         expected = '4'
-        self.assertEqual(output, expected)
+        self.assertEqual(expected, output)
 
     def test_returns_3_as_Fizz_when_multiple_of_three(self):
         # Arrange
@@ -38,7 +38,7 @@ class ClassFizzBuzzShould(unittest.TestCase):
         output = ClassFizzBuzz(input=input).transform()
         # Assert
         expected = 'Fizz'
-        self.assertEqual(output, expected)
+        self.assertEqual(expected, output)
 
     def test_returns_6_as_Fizz_when_multiple_of_three(self):
         # Arrange
@@ -47,7 +47,7 @@ class ClassFizzBuzzShould(unittest.TestCase):
         output = ClassFizzBuzz(input=input).transform()
         # Assert
         expected = 'Fizz'
-        self.assertEqual(output, expected)
+        self.assertEqual(expected, output)
 
     def test_returns_9_as_Fizz_when_multiple_of_three(self):
         # Arrange
@@ -56,7 +56,7 @@ class ClassFizzBuzzShould(unittest.TestCase):
         output = ClassFizzBuzz(input=input).transform()
         # Assert
         expected = 'Fizz'
-        self.assertEqual(output, expected)
+        self.assertEqual(expected, output)
 
     def test_returns_5_as_Fizz_when_multiple_of_five(self):
         # Arrange
@@ -65,7 +65,7 @@ class ClassFizzBuzzShould(unittest.TestCase):
         output = ClassFizzBuzz(input=input).transform()
         # Assert
         expected = 'Buzz'
-        self.assertEqual(output, expected)
+        self.assertEqual(expected, output)
 
     def test_returns_5_as_Fizz_when_multiple_of_five(self):
         # Arrange
@@ -74,4 +74,4 @@ class ClassFizzBuzzShould(unittest.TestCase):
         output = ClassFizzBuzz(input=input).transform()
         # Assert
         expected = 'FizzBuzz'
-        self.assertEqual(output, expected)
+        self.assertEqual(expected, output)
