@@ -9,7 +9,7 @@ class ClassFibonacciShould(unittest.TestCase):
         # Arrange
         input = 0
         # Act
-        output = ClassFibonacci(input=input).transform()
+        output = ClassFibonacci(position=input).fibonacci()
         # Assert
         expected = 0
         self.assertEqual(expected,output)
@@ -18,16 +18,25 @@ class ClassFibonacciShould(unittest.TestCase):
         # Arrange
         input = 1
         # Act
-        output = ClassFibonacci(input=input).transform()
+        output = ClassFibonacci(position=input).fibonacci()
         # Assert
         expected = 1
         self.assertEqual(expected,output)
 
-    # def test_return_1_when_position_is_2(self):
-    #     # Arrange
-    #     input = 2
-    #     # Act
-    #     output = ClassFibonacci(input=input).transform()
-    #     # Assert
-    #     expected = 1
-    #     self.assertEqual(expected,output)
+    def test_return_1_when_position_is_2(self):
+        # Arrange
+        input = 2
+        # Act
+        output = ClassFibonacci(position=input).fibonacci()
+        # Assert
+        expected = 1
+        self.assertEqual(expected,output)
+
+    def test_return_610_when_position_is_15(self):
+        # Arrange
+        input = 15
+        # Act
+        output = ClassFibonacci(position=input).fibonacci()
+        # Assert
+        expected = 610
+        self.assertEqual(expected,output)
